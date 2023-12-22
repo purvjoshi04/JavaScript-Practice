@@ -23,7 +23,7 @@ const bigNumber = 2354678765432134567n
 
 const lordVishnuAvatar = ["Lord Ram", "Lord Krishna", "Lord Narasimha"];
 
-lordVishnuAvatar.forEach((index) => console.log("Lord vishnu avatar:",index));
+// lordVishnuAvatar.forEach((index) => console.log("Lord vishnu avatar:",index));
 
 const employee = {
     name: "Employee1",
@@ -35,3 +35,34 @@ const employee = {
     ]
 }
 
+// *************************************************************************************
+
+// Stack (Primitve Datatypes in javascript), Heap (Non-primtive Datatypes in javaScript)
+
+//already declared above ^
+ userEmail = "user@123.gmail.com";
+
+ let anotherUserEmail = userEmail;
+ anotherUserEmail = "user@12345678.gmail.com"
+//  console.log(userEmail); 
+//  console.log(anotherUserEmail); 
+
+ // user@123.gmail.com
+// user@12345678.gmail.com
+
+// we have learned that primtive datatypes only give copy ogf the original data notthe actual data so here obvious we are chaning the copy of the actual data in stack memory
+
+// non primtive datatypes example
+
+let userOne = {
+ name: "User",
+ email: "user123@gmail.com",
+ age:30
+}
+
+let userTwo = userOne;
+userTwo.email = "newEmailUser@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// in non-primtive datatypes if we change the value of the data which is non-primtive so it will change the value of the actual data reference value which in the heap memory because the both variable referenced to the same data in heap memory not the copy of the data 
